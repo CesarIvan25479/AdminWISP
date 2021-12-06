@@ -244,19 +244,19 @@
                                     <!-- Tab panes -->
                                     <div class="tab-content">
                                         <div class="tab-pane fade in active" id="home">
-                                            <h4><i class="fa fa-wifi contrast"></i></h4>
+                                            <h2><i class="fa fa-wifi contrast"></i></h2>
                                             <form>
                                                 <div class="form-group row">
                                                     <label for="colFormLabel" class="col-sm-1 col-form-label">Simple Queue</label>
                                                     <div class="col-sm-11">
-                                                      <input type="SimpleQueue" class="form-control" id="colFormLabel" placeholder="Ej: 00001">
+                                                      <input type="text" class="form-control" id="SimpleQueue" placeholder="Ej: 00001">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group row">
                                                     <label for="colFormLabel" class="col-sm-1 col-form-label">IP</label>
                                                     <div class="col-sm-11">
-                                                      <input type="IP" class="form-control" id="colFormLabel" placeholder="Ej: 192.168.1.0">
+                                                      <input type="text" class="form-control" id="IP" placeholder="Ej: 192.168.1.0">
                                                     </div>
                                                 </div>
 
@@ -310,17 +310,107 @@
                                             </form>
                                         </div>
                                         <div class="tab-pane fade" id="profile">
+                                            <h2><i class="fa fa-info-circle contrast"></i></h2>
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Nombres</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="nombres" placeholder="Nombres">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Apellidos</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Dirección</label>
+                                                <div class="col-sm-11">
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
                                             
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Localidad</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="localidad" placeholder="Localidad">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Municipio</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="municipio" placeholder="Municipio">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Codigo Postal</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="cp" placeholder="Codigo Postal">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Telefono</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="Telefono" placeholder="Telefono">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="tab-pane fade" id="messages">
-                                            <h4>Messages Tab</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <h2><i class="fa fa-bank contrast"></i> Datos Fiscales (Opcionales)</h2>
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Razon Social</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="razonsocial" placeholder="Razon Social">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Tipo de Persona</label>
+                                                <div class="col-sm-11">
+                                                    <select class="form-control">
+                                                        <option>Fisica</option>
+                                                        <option>Moral</option>                                               
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">RFC</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="rfc" placeholder="RFC">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Dirección Facturación</label>
+                                                <div class="col-sm-11">
+                                                    <textarea class="form-control" rows="6"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">Correo Facturación</label>
+                                                <div class="col-sm-11">
+                                                  <input type="text" class="form-control" id="correo" placeholder="Correo Electronico">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="colFormLabel" class="col-sm-1 col-form-label">CFDI</label>
+                                                <div class="col-sm-11">
+                                                    <select class="form-control">
+                                                        <option> G03 Gastos en general</option>
+                                                        <option>Moral</option>                                               
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="tab-pane fade" id="settings">
-                                            <h4>Settings Tab</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <!-- /.panel-body -->
@@ -328,6 +418,10 @@
                             <!-- /.panel -->
                         </div>
                         
+                    </div>
+
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i> Guardar </button>
                     </div>
                     <!-- /.row -->
                     </div>

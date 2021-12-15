@@ -217,7 +217,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header"><i class="fa fa-users"></i> Lista de Clientes</h1>
+                            <h1 class="page-header"><i class="fa fa-dollar"></i> Registro de Pagos</h1>
                         </div>
                         
                         <!-- /.col-lg-12 -->
@@ -228,154 +228,103 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     
-                                   <div class="col-lg-3">
-                                    <select class="form-control">
-                                        <option>----Selecciona----</option>
-                                        <option>Santiago</option>
-                                        <option>Tilapa</option>
-                                        <option>Almoloya</option>
-                                    </select>
-                                </div>
-                                    <div class="options">
-                                        <a href="../pages/RegistrarCliente.html" class="btn btn-primary btn-md"><i class="glyphicon glyphicon-plus"></i> Agregar Cliente</a>
-                                    </div>
-                        
+                                    <form id="Generar">
+                                            
+                                        <div class="form-row align-items-center">
+                                            <div class="col-sm-9 my-12">
+                                                <input list="Cliente" class="form-control form-control-sm">
+                                                <datalist id="Cliente">
+                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
+                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
+                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
+                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
+                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
+                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
+                                                </datalist>
+                                            </div>
+                                            <div class="col-auto my-1">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="TodasFechas" id="TodasFechas">
+                                                    <label class="form-check-label" for="TodasFechas">
+                                                        T
+                                                    </label>
+                                                </div>
+                                            </div>
+                                
+                                        </div>
+                                    </form>
                                     
                                 </div>
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered table-hover" id="Clientes">
-                                            <thead>
-                                                <tr>
-                                                    <th>Cliente</th>
-                                                    <th>Nombre</th>
-                                                    <th>IP</th>
-                                                    <th>Dirección</th>
-                                                    <th>Accion</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>0001</td>
-                                                    <td>Cesar Ivan Rivera Castro</td>
-                                                    <td>192.168.1.1</td>
-                                                    <td>Av. Independencia 711</td>
-                                                    <td>
-                                                        
-                                                        <a href="ActualizarClientes.html"class="btn btn-info btn-sm fa fa-edit"></a>
-                                                        <a href="TraficoRed.html"class="btn btn-info btn-sm fa fa-bar-chart"></a>
-                                                    </td>
-                                                </tr>
-                                                
-                                               
-                                                
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.table-responsive -->
+                                    <form id="Registrar">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <input type="text" class="form-control form-control-sm" placeholder="Cliente" id="Nombre" name="nombre" readonly>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <select name="mes" class="form-control form-control-sm" id="selectMes">
+                                                    <option>ENERO 2022</option>
+                                                    <option>FEBRERO 2022</option>
+                                                    <option>MARZO 2022</option>
+                                                    <option>ABRRIL 2022</option>
+                                                    <option>MAYO 2022</option>
+                                                    <option>JUNIO 2022</option>
+                                                    <option>JULIO 2022</option>
+                                                    <option>AGOSTO 2022</option>
+                                                    <option>SEPTIEMBRE 2022</option>
+                                                    <option>OCTUBRE 2022</option>
+                                                    <option>NOVIEMBRE 2022</option>
+                                                    <option>DICIEMBRE 2022</option>
+                                                    <option >OTRO</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <input type="number" class="form-control form-control-sm" name="importe" placeholder="$0.00" id='importe' required >
+                                            </div>
+                                        </div>
+                    
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <input type="date" class="form-control form-control-sm" value="2021-01-01" name="fechapago" id='fechapago'>
+              
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <input type="text" class="form-control form-control-sm" placeholder="Observación" name="observacion" id="observacion">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <select name="formapago" id="SelectFormP" class="form-control form-control-sm">
+                                                    <option id="dep">EFECTIVO</option>
+                                                    <option id="tran">TRANSFERENCIA</option>
+                                                    <option id="efe">PAGO CON TARJETA</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <select name="formapago" id="SelectFormP" class="form-control form-control-sm">
+                                                    <option id="dep">Registrar</option>
+                                                    <option id="tran">Registrar y activar</option>
+                                                    
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+                                            
+                                            </form>
                                     
                                 </div>
+                               
                                 <!-- /.panel-body -->
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <div class="form-group col-md-12">
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i> Guardar </button>
+                                        <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> Cancelar </button>
+                                    </div>
+                                </div>
+                                
                             </div>
                             <!-- /.panel -->
                         </div>
@@ -406,35 +355,5 @@
         <script src="../js/startmin.js"></script>
 
         <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-        <script>
-            $(document).ready(function() {
-           $('#Clientes').DataTable({
-               "columnDefs": [{
-                   "targets": 0
-               }],
-               language: {
-                   "sProcessing": "Procesando...",
-                   "sLengthMenu": "Mostrar _MENU_",
-                   "sZeroRecords": "No se encontraron resultados",
-                   "sEmptyTable": "Ningún dato disponible en esta tabla",
-                   "sInfo": "Resultados _START_-_END_ de  _TOTAL_",
-                   "sInfoEmpty": "Mostrando resultados del 0 al 0 de un total de 0 registros",
-                   "sInfoFiltered": "",
-                   "sSearch": "Buscar Cliente:",
-                   "sLoadingRecords": "Cargando...",
-                   "oPaginate": {
-                       "sFirst": "Primero",
-                       "sLast": "Último",
-                       "sNext": "Siguiente",
-                       "sPrevious": "Anterior"
-                   },   
-               },
-               "lengthMenu": [[25, 50, 100, -1], [25, 50, 100, "Todos"]],
-               scrollY:        '65vh',
-               scrollCollapse: true
-           });
-       });
-           </script>
-
     </body>
 </html>

@@ -217,7 +217,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header"><i class="fa fa-dollar"></i> Registro de Pagos</h1>
+                            <h1 class="page-header"><i class="fa fa-exchange"></i> Agregar Plan de internet</h1>
                         </div>
                         
                         <!-- /.col-lg-12 -->
@@ -227,92 +227,50 @@
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    
-                                    <form id="Generar">
-                                            
-                                        <div class="form-row align-items-center">
-                                            <div class="col-sm-9 my-12">
-                                                <input list="Cliente" class="form-control form-control-sm">
-                                                <datalist id="Cliente">
-                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
-                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
-                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
-                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
-                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
-                                                    <option value="00001">Cesar Ivan Rivera Castro</option>
-                                                </datalist>
-                                            </div>
-                                            <div class="col-auto my-1">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="TodasFechas" id="TodasFechas">
-                                                    <label class="form-check-label" for="TodasFechas">
-                                                        T
-                                                    </label>
-                                                </div>
-                                            </div>
-                                
-                                        </div>
-                                    </form>
-                                    
+                                    <h5><i class="fa fa-info-circle"></i> Configuración basica</h5>
                                 </div>
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
-                                    <form id="Registrar">
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <input type="text" class="form-control form-control-sm" placeholder="Cliente" id="Nombre" name="nombre" readonly>
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <select name="mes" class="form-control form-control-sm" id="selectMes">
-                                                    <option>ENERO 2022</option>
-                                                    <option>FEBRERO 2022</option>
-                                                    <option>MARZO 2022</option>
-                                                    <option>ABRRIL 2022</option>
-                                                    <option>MAYO 2022</option>
-                                                    <option>JUNIO 2022</option>
-                                                    <option>JULIO 2022</option>
-                                                    <option>AGOSTO 2022</option>
-                                                    <option>SEPTIEMBRE 2022</option>
-                                                    <option>OCTUBRE 2022</option>
-                                                    <option>NOVIEMBRE 2022</option>
-                                                    <option>DICIEMBRE 2022</option>
-                                                    <option >OTRO</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-md-2">
-                                                <input type="number" class="form-control form-control-sm" name="importe" placeholder="$0.00" id='importe' required >
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-sm-1 col-form-label">Clave</label>
+                                        <div class="col-sm-11">
+                                          <input type="text" class="form-control" id="razonsocial" placeholder="Ej: INTER">
                                         </div>
-                    
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <input type="date" class="form-control form-control-sm" value="2021-01-01" name="fechapago" id='fechapago'>
-              
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <input type="text" class="form-control form-control-sm" placeholder="Observación" name="observacion" id="observacion">
-                                            </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-sm-1 col-form-label">Nombre Plan</label>
+                                        <div class="col-sm-11">
+                                          <input type="text" class="form-control" id="razonsocial" placeholder="Ej: Basico">
                                         </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <select name="formapago" id="SelectFormP" class="form-control form-control-sm">
-                                                    <option id="dep">EFECTIVO</option>
-                                                    <option id="tran">TRANSFERENCIA</option>
-                                                    <option id="efe">PAGO CON TARJETA</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <select name="formapago" id="SelectFormP" class="form-control form-control-sm">
-                                                    <option id="dep">Registrar</option>
-                                                    <option id="tran">Registrar y activar</option>
-                                                    
-                                                </select>
-                                            </div>
-                                            
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-sm-1 col-form-label">Precio</label>
+                                        <div class="col-sm-11">
+                                          <input type="number" class="form-control" id="rfc" placeholder="Ej: $1000.00">
                                         </div>
-                                            
-                                            </form>
-                                    
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-sm-1 col-form-label">Velocidad de bajada</label>
+                                        <div class="col-sm-11">
+                                          <input type="text" class="form-control" id="rfc" placeholder="Ej: 1(M,K)">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-sm-1 col-form-label">Velocidad de subida</label>
+                                        <div class="col-sm-11">
+                                          <input type="text" class="form-control" id="rfc" placeholder="Ej: 1(M,K)">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-sm-1 col-form-label">Descripción</label>
+                                        <div class="col-sm-11">
+                                            <textarea class="form-control" rows="6"></textarea>
+                                        </div>
+                                    </div>                                    
                                 </div>
                                
                                 <!-- /.panel-body -->
@@ -321,7 +279,8 @@
                                 <div class="form-group col-md-12">
                                     <div class="form-group col-md-12">
                                         <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i> Guardar </button>
-                                        <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> Cancelar </button>
+                                        <a href="PlanesInternet.html"><button type="submit" class="btn"> Cancelar</button></a>
+                                        
                                     </div>
                                 </div>
                                 
